@@ -5,3 +5,11 @@
   background-color: #ffffff;
   margin-top: 50px;
 }
+
+.react-pdf__Page {
+  width: 598px;
+}
+
+.react-pdf__Document {
+  width: 598px;
+}

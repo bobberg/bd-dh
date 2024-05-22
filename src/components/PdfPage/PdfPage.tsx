@@ -21,7 +21,7 @@ const PdfPage = () => {
   }
 
   return (
-    <div className="pdf-div">
+    <div className="pdf-div" style={{ width: "595px" }}>
       <Document file={DamoresMijnFSV} onLoadSuccess={onDocumentLoadSuccess}>
         {pageNumber <= numPages ? (
           <Page
