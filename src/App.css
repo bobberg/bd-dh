@@ -13,6 +13,14 @@
   }
 }
 
+.App-nav {
+  height: 107px;
+}
+.App-nav svg {
+  height: 100%;
+  transform: translateX(24px);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

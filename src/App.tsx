@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./App.css";
+import BelastingDienstLogo from "./assets/BelastingdienstLogo";
 
 declare global {
   interface Window {
@@ -30,6 +31,9 @@ function App() {
 
   return (
     <div className="App">
+      <nav className="App-nav">
+        <BelastingDienstLogo />
+      </nav>
       <header className="App-header"></header>
     </div>
   );
