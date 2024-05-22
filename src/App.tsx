@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import "./App.css";
+
+declare global {
+  interface Window {
+    uneeqInteractionsOptions: any;
+  }
+}
 
 function App() {
+  useEffect(() => {
+    window.uneeqInteractionsOptions = {
+      personaShareId: process.env.REACT_APP_PERSONA_SHARE_ID,
+      layoutMode: "fullScreen",
+      showUserInputInterface: true,
+      displayCallToAction: true,
+      enableMicrophone: true,
+    };
+
+    const script = document.createElement("script");
+    script.src = "https://hosted.us.uneeq.io/interactions/v1/deploy";
+    script.async = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header"></header>
     </div>
   );
 }
