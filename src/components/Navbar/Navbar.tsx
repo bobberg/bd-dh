@@ -3,8 +3,8 @@ import "./Navbar.css";
 import HamburgerMenuIcon from "../../assets/HamburgerMenuIcon";
 import HouseIcon from "../../assets/HouseIcon";
 import PersonIcon from "../../assets/PersonIcon";
-import ArrowRightIcon from "../../assets/ArrowRightIcon";
-import ArrowDownIcon from "../../assets/ArrowDownIcon";
+import ChevronRightIcon from "../../assets/ChevronRightIcon";
+import ChevronDownIcon from "../../assets/ChevronDownIcon";
 
 const Navbar = () => {
   return (
@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
           <div>R J FIKKEMA</div>
           <div>
-            <ArrowDownIcon />
+            <ChevronDownIcon />
           </div>
         </div>
       </nav>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div>Overzicht</div>
 
         <div>
-          <ArrowRightIcon />
+          <ChevronRightIcon />
         </div>
 
         <div>Mijn FSV - uw persoonlijk overzicht</div>
