@@ -19,7 +19,7 @@ function App() {
     };
 
     const script = document.createElement("script");
-    script.src = "https://hosted.us.uneeq.io/interactions/v1/deploy";
+    script.src = "https://hosted.eu.uneeq.io/interactions/v1/deploy";
     script.async = true;
 
     document.body.appendChild(script);
