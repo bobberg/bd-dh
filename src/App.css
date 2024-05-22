@@ -1,4 +1,13 @@
 .App {
   text-align: center;
   background-color: #eef7fb;
+  width: 100%;
+}
+.App-container {
+  margin: 0 138px;
+}
+.App-heading {
+  text-align: left;
+  margin: 34px 0 16px 0;
+  font-size: 20px;
 }

@@ -8,7 +8,6 @@ const Header = () => {
       <div className="App-header">
         <BelastingDienstLogo />
       </div>
-      <nav className="App-nav"></nav>
     </>
   );
 };
