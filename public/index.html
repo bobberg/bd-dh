@@ -25,7 +25,18 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <script>
+      window.uneeqInteractionsOptions = {
+        personaShareId: "23d9d927-95a3-435b-9965-e7e66d8be1cd",
+        // personaShareId: process.env.PERSONA_SHARE_ID,
+        layoutMode: "fullScreen",
+        showUserInputInterface: true,
+        displayCallToAction: true,
+        enableMicrophone: true,
+      };
+    </script>
+    <script src="https://hosted.eu.uneeq.io/interactions/v1/deploy"></script>
+    <title>Belastingdienst</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
