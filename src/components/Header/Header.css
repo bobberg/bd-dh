@@ -1,0 +1,17 @@
+.App-header {
+  height: 107px;
+}
+.App-header svg {
+  height: 100%;
+  transform: translateX(24px);
+}
+.App-nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 0;
+  width: 100%;
+  background-color: #8fcae7;
+  min-height: 60px;
+}

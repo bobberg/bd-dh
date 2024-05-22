@@ -1,24 +1,41 @@
-import { useState } from "react";
-import { Document, Page } from "react-pdf";
-import  DamoresMijnFSV from "../../data/ DamoresMijnFSV.pdf"
+import React, { useState } from "react";
+import { pdfjs, Document, Page } from "react-pdf";
 
-function PdfPage() {
-  const [numPages, setNumPages] = useState();
+import DamoresMijnFSV from "../../data/DamoresMijnFSV.pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.js",
+  import.meta.url
+).toString();
+
+const PdfPage = () => {
+  const [numPages, setNumPages] = useState(26);
   const [pageNumber, setPageNumber] = useState(5);
 
   function onDocumentLoadSuccess() {
     setNumPages(numPages);
   }
 
+  function onDocumentClick(numPages: number) {
+    setPageNumber(pageNumber + 1);
+  }
+
   return (
     <div className="pdf-div">
-      <Document file={ DamoresMijnFSV} onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} renderTextLayer={false} renderAnnotationLayer={false}/>
+      <Document file={DamoresMijnFSV} onLoadSuccess={onDocumentLoadSuccess}>
+        {pageNumber <= numPages ? (
+          <Page
+            pageNumber={pageNumber}
+            renderTextLayer={false}
+            renderAnnotationLayer={false}
+            onClick={onDocumentClick}
+          />
+        ) : (
+          (setPageNumber(1), (<p>End of document reached.</p>))
+        )}
       </Document>
     </div>
   );
-}
-
+};
 
 export default PdfPage;
-
