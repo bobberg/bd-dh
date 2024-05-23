@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
-
-import DamoresMijnFSV from "../../data/DamoresMijnFSV.pdf";
+// eslint-disable-next-line
+const DamoresMijnFSV = require("../../data/DamoresMijnFSV.pdf");
 import PreviousPageIcon from "../../assets/PreviousPageIcon";
 import NextPageIcon from "../../assets/NextPageIcon";
 
