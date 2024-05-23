@@ -5,6 +5,7 @@
 }
 .App-container {
   margin: 0 138px;
+  margin-bottom: 80px !important;
 }
 .App-heading {
   text-align: left;

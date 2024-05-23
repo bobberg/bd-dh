@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import PdfPage from "./components/PdfPage/PdfPage";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <PdfPage />
         <div id="digitalhuman"></div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,90 @@
+.Footer-component {
+	background-color: #ffffff;
+	width: 100%;
+	height: 629px;
+	padding: 0 106px;
+	padding-top: 40px !important;
+}
+
+.Footer-info {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	height: 485px;
+	border-bottom: 1px solid #8fcae7;
+	Padding: 0px, 32px, 24px, 32px;
+}
+
+.Footer-info h2,
+h3 {
+	color: #154273;
+	font: Rijksoverheid 21px bold;
+}
+
+.List-links ul {
+	list-style: none;
+	color: #01689b;
+	font: Rijksoverheid 18px 400;
+	text-align: left;
+	line-height: 27px;
+	padding: 0px !important;
+}
+
+.List-links li {
+	padding: 4px 0 15px 0;
+}
+
+p {
+	color: #154273;
+    font: Rijksoverheid 18px 400 ;
+}
+
+.Contact-component {
+padding: 0 24px;
+height: 389px;
+}
+
+.Contact-info {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: flex-start;
+	align-content: space-around; */
+	padding-left: 0px !important;
+    
+}
+
+.Contact-info-list p, a {
+	color: #154273 !important;
+	text-wrap: wrap;
+}
+
+.Contact-info-list u {
+	color: #01689B;
+}
+
+
+.Copyright {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: space-around;
+	gap: 70px;
+	padding: 12px 24px;
+	margin: 10px 0;
+
+
+}
+
+.Copyright-icon {
+	display: flex;
+	flex-direction: row;
+	align-content: space-around;
+	justify-content: flex-start;
+	color: #01689B;
+	gap: 15px;
+	padding: 0 12px;
+}
+
+
+
+

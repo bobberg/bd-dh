@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowDownIcon = () => {
+const ChevronDownIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,4 +17,4 @@ const ArrowDownIcon = () => {
   );
 };
 
-export default ArrowDownIcon;
+export default ChevronDownIcon;
