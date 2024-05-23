@@ -1,99 +1,100 @@
 .Footer-component {
-	background-color: #ffffff;
-	width: 100%;
-	padding: 40px 106px 0px 106px;
-    text-align: start;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px 106px 0px 106px;
+  text-align: start;
 }
 
 .Footer-info {
-	display: flex;
-	justify-content: space-between;
-	width: 90%;
-	border-bottom: 1px solid #8fcae7;
-	Padding: 0px 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 1px solid #8fcae7;
+  padding: 0px 32px;
 }
 
 .Footer-info h2,
 h3 {
-	color: #154273;
-	font: Rijksoverheid 21px bold;
+  color: #154273;
+  font-family: Rijksoverheid;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .List-links ul {
-	list-style: none;
-	color: #01689b;
-	font: Rijksoverheid 18px 400;
-	text-align: left;
-	line-height: 27px;
-	padding: 0px !important;
+  list-style: none;
+  color: #01689b;
+  font-family: Rijksoverheid;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 27px;
+  padding: 0px !important;
 }
 
 .List-links li {
-	padding: 4px 0 15px 0;
-}
-
-.Footer-right {
-
-  
+  padding: 4px 0 15px 0;
 }
 
 p {
-	color: #154273;
-    font: Rijksoverheid 18px 400 ;
+  color: #154273;
+  font-family: Rijksoverheid;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .Contact-component {
-padding-right: 7rem;
-margin-bottom: 2rem !important;
-height: 389px;
+  padding-right: 7rem;
+  margin-bottom: 2rem !important;
+  height: 389px;
 }
 
 .Contact-info {
-	display: flex;
-	flex-direction: row;
-    align-items: center;
-	padding-left: 0px !important;
-    gap: 32px;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0px !important;
+  gap: 32px;
 }
 
 .Contact-info-list {
-    text-align: start;
-    line-height: 27px;
-    padding-top: 0px;
+  text-align: start;
+  line-height: 27px;
+  padding-top: 0px;
+  margin-bottom: 15px;
 }
 
-.Contact-info-list p, a {
-	color: #154273 !important;
-	text-wrap: wrap;
+.Contact-info-list h3 {
+  line-height: 22px;
+  margin-bottom: 5px !important;
+}
+
+.Contact-info-list p,
+a {
+  color: #154273 !important;
+  margin-top: 8px !important;
 }
 
 .Contact-info-list u {
-	color: #01689B;
+  color: #01689b;
 }
 
-
 .Copyright {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-content: space-around;
-	gap: 70px;
-	padding: 12px 24px;
-	margin: 10px 0;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-around;
+  gap: 70px;
+  padding: 12px 24px;
+  margin: 10px 0;
 }
 
 .Copyright-icon {
-	display: flex;
-	flex-direction: row;
-	align-content: space-around;
-	justify-content: flex-start;
-	color: #01689B;
-	gap: 15px;
-	padding: 0 12px;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: flex-start;
+  color: #01689b;
+  gap: 15px;
+  padding: 0 12px;
 }
-
-
-
-
