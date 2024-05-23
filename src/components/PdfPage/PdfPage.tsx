@@ -19,13 +19,17 @@ const PdfPage = () => {
     setNumPages(numPages);
   }
 
-  function onDocumentClick(numPages: number) {
+  const onDocumentClick = (numPages: number) => {
+    console.log("Next clicked");
     setPageNumber(pageNumber + 1);
-  }
+    return;
+  };
 
-  function onPreviousIconClick(numPages: number) {
+  const onPreviousIconClick = (numPages: number) => {
+    console.log("Previous icon clicked");
     setPageNumber(pageNumber - 1);
-  }
+    return;
+  };
 
   return (
     <div className="pdf-div" style={{ width: "595px" }}>
@@ -41,10 +45,16 @@ const PdfPage = () => {
           (setPageNumber(1), (<p>End of document reached.</p>))
         )}
         <div className="page-controls">
-          <button className="page-navigation">
+          <button
+            className="page-navigation"
+            onClick={() => onPreviousIconClick(numPages)}
+          >
             <PreviousPageIcon />
           </button>
-          <button className="page-navigation">
+          <button
+            className="page-navigation"
+            onClick={() => onDocumentClick(numPages)}
+          >
             <NextPageIcon />
           </button>
         </div>
