@@ -12,7 +12,7 @@ const Footer = () => {
     <>
       <div className="Footer-component">
       <div className="Footer-info">
-        <div>
+        <div className="Footer-left">
              <h2>FSV Portaal</h2>
         <div className="List-links">
             <ul>
@@ -23,16 +23,21 @@ const Footer = () => {
             </ul>
         </div>
         </div>
-       <div>
-    <h2>Heeft u vragen of opmerkingen?</h2>
+       <div className="Footer-right">
+        <div>
+             <h2>Heeft u vragen of opmerkingen?</h2>
     <p>Wij helpen u graag verder. U heeft de volgende mogelijkheden:</p>
+    </div>
+    
     
         <div className="Contact-component">
             <div className="Contact-info">
-                <PhoneIcon />
+                <div>
+                    <PhoneIcon />
+                    </div>
              <div className="Contact-info-list">
                 <h3>Plan een afspraak in</h3>
-                <a>Log in op het persoonlijk overzicht om <u>een afspraak in te plannen</u></a>
+                <a>Log in op het persoonlijk overzicht om <u>een afspraak in te <br /> plannen</u></a>
              </div>
             </div>
             <div className="Contact-info">
@@ -47,7 +52,7 @@ const Footer = () => {
              <MobileIcon />
              <div className="Contact-info-list">
                 <h3>Bel met het FSV Informatiepunt</h3>
-                <p>Op <u>0800 235 83 56</u> (gratis). We zijn bereikbaar van maandag
+                <p>Op <u>0800 235 83 56</u> (gratis). We zijn bereikbaar van maandag <br />
                  tot en met vrijdag tussen 8.00 en 17.00 uur.</p>
              </div>
             </div>
