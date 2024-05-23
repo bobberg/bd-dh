@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { pdfjs, Document, Page } from "react-pdf";
 // eslint-disable-next-line
-const DamoresMijnFSV = require("../../data/DamoresMijnFSV.pdf");
+//const DamoresMijnFSV = require("../../data/DamoresMijnFSV.pdf");
+import DamoresMijnFSV from "../../data/DamoresMijnFSV.pdf";
 import PreviousPageIcon from "../../assets/PreviousPageIcon";
 import NextPageIcon from "../../assets/NextPageIcon";
 
@@ -22,7 +23,7 @@ const PdfPage = () => {
     setPageNumber(pageNumber + 1);
   }
 
-   function onPreviousIconClick(numPages: number) {
+  function onPreviousIconClick(numPages: number) {
     setPageNumber(pageNumber - 1);
   }
 
@@ -39,11 +40,15 @@ const PdfPage = () => {
         ) : (
           (setPageNumber(1), (<p>End of document reached.</p>))
         )}
-        <div className="Page-controls">
-        <button> <PreviousPageIcon /> </button>
-        <button> <NextPageIcon /> </button>
+        <div className="page-controls">
+          <button className="page-navigation">
+            <PreviousPageIcon />
+          </button>
+          <button className="page-navigation">
+            <NextPageIcon />
+          </button>
         </div>
-      </Document> 
+      </Document>
     </div>
   );
 };

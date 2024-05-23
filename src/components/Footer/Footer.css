@@ -1,11 +1,11 @@
-.Footer-component {
+.footer-component {
   background-color: #ffffff;
   width: 100%;
   padding: 40px 106px 0px 106px;
   text-align: start;
 }
 
-.Footer-info {
+.footer-info {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -13,7 +13,7 @@
   padding: 0px 32px;
 }
 
-.Footer-info h2,
+.footer-info h2,
 h3 {
   color: #154273;
   font-family: Rijksoverheid;
@@ -21,7 +21,7 @@ h3 {
   font-weight: bold;
 }
 
-.List-links ul {
+.list-links ul {
   list-style: none;
   color: #01689b;
   font-family: Rijksoverheid;
@@ -32,7 +32,7 @@ h3 {
   padding: 0px !important;
 }
 
-.List-links li {
+.list-links li {
   padding: 4px 0 15px 0;
 }
 
@@ -43,13 +43,13 @@ p {
   font-weight: 400;
 }
 
-.Contact-component {
+.contact-component {
   padding-right: 7rem;
   margin-bottom: 2rem !important;
   height: 389px;
 }
 
-.Contact-info {
+.contact-info {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,29 +57,29 @@ p {
   gap: 32px;
 }
 
-.Contact-info-list {
+.contact-info-list {
   text-align: start;
   line-height: 27px;
   padding-top: 0px;
   margin-bottom: 15px;
 }
 
-.Contact-info-list h3 {
+.contact-info-list h3 {
   line-height: 22px;
   margin-bottom: 5px !important;
 }
 
-.Contact-info-list p,
+.contact-info-list p,
 a {
   color: #154273 !important;
   margin-top: 8px !important;
 }
 
-.Contact-info-list u {
+.contact-info-list u {
   color: #01689b;
 }
 
-.Copyright {
+.copyright {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -89,7 +89,7 @@ a {
   margin: 10px 0;
 }
 
-.Copyright-icon {
+.copyright-icon {
   display: flex;
   flex-direction: row;
   align-content: space-around;

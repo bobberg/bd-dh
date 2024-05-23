@@ -5,7 +5,7 @@ import BelastingDienstLogo from "../../assets/BelastingdienstLogo";
 const Header = () => {
   return (
     <>
-      <div className="App-header">
+      <div className="app-header">
         <BelastingDienstLogo />
       </div>
     </>

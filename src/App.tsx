@@ -7,11 +7,11 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       <Navbar />
-      <div className="App-container">
-        <div className="App-heading">Mijn FSV - Persoonlijk Overzicht</div>
+      <div className="app-container">
+        <div className="app-heading">Mijn FSV - Persoonlijk Overzicht</div>
         <PdfPage />
         <div id="digitalhuman"></div>
       </div>

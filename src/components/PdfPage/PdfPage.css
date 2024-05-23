@@ -3,7 +3,7 @@
   height: 827px;
   padding: 50px;
   background-color: #ffffff;
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 
 .react-pdf__Page {
@@ -13,3 +13,33 @@
 .react-pdf__Document {
   width: 598px;
 }
+
+.page-controls {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: white;
+    opacity: 0;
+    transform: translate(-50%);
+    transition: opacity ease-in-out .2s;
+    box-shadow: var(--shadow);
+    border-radius: var(--rounded-corners);
+    z-index: 2
+}
+
+.page-navigation {
+    width: 44px;
+    height: 44px;
+    background: white;
+    border: 0;
+    font: inherit;
+    font-size: .8em;
+    border-radius: var(--rounded-corners)
+}
+
+.page-navigation {
+  border: 1px solid #007BC7;
+  background-color: #B2D7EEE5;
+
+}
+

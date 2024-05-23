@@ -9,7 +9,7 @@ import ChevronDownIcon from "../../assets/ChevronDownIcon";
 const Navbar = () => {
   return (
     <>
-      <nav className="App-nav">
+      <nav className="app-nav">
         <div className="nav-items">
           <div>
             <HamburgerMenuIcon />
@@ -21,7 +21,7 @@ const Navbar = () => {
           <div>
             <PersonIcon />
           </div>
-          <div>R J FIKKEMA</div>
+          <div>J.A.A. DIKMANS</div>
           <div>
             <ChevronDownIcon />
           </div>

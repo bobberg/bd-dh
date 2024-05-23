@@ -1,13 +1,13 @@
-.App {
+.app {
   text-align: center;
   background-color: #eef7fb;
   width: 100%;
 }
-.App-container {
+.app-container {
   margin: 0 138px;
   margin-bottom: 80px !important;
 }
-.App-heading {
+.app-heading {
   text-align: left;
   margin: 34px 0 16px 0;
   font-size: 20px;

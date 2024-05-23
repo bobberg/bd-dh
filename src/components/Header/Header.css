@@ -1,8 +1,8 @@
-.App-header {
+.app-header {
   height: 107px;
   background-color: #ffffff;
 }
-.App-header svg {
+.app-header svg {
   height: 100%;
   transform: translateX(24px);
 }
