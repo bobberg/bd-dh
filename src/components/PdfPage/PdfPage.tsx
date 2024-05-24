@@ -32,7 +32,8 @@ const PdfPage = () => {
   };
 
   return (
-    <div className="pdf-div" style={{ width: "595px" }}>
+    <div className="pdf-div" style={{ width: "595px", position: "relative",
+  overflow: "hidden !important"}}>
       <Document file={DamoresMijnFSV} onLoadSuccess={onDocumentLoadSuccess}>
         {pageNumber <= numPages ? (
           <Page
@@ -44,21 +45,30 @@ const PdfPage = () => {
         ) : (
           (setPageNumber(1), (<p>End of document reached.</p>))
         )}
-        <div className="page-controls">
+      </Document>
+      <div className="page-controls" style={{position: "absolute",
+      bottom: '4%',
+        left: '40%',
+        background: '#154273',
+        width: '7rem',
+        height: '2rem',
+        padding: '10px',
+        zIndex: 1,
+        }}>
           <button
-            className="page-navigation"
+            style={{ backgroundColor: 'transparent', border: 'none', padding: '3px 2px 2px'}}
             onClick={() => onPreviousIconClick(numPages)}
           >
             <PreviousPageIcon />
           </button>
+          <span style={{ padding: '1em'}}></span>
           <button
-            className="page-navigation"
+            style={{backgroundColor: 'transparent', border: 'none', padding: '3px 2px 2px'}}
             onClick={() => onDocumentClick(numPages)}
           >
             <NextPageIcon />
           </button>
         </div>
-      </Document>
     </div>
   );
 };
