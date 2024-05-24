@@ -99,17 +99,60 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+     
     <script>
       window.uneeqInteractionsOptions = {
-        personaShareId: "23d9d927-95a3-435b-9965-e7e66d8be1cd",
+        personaShareId: "c830f779-6a4b-4cd4-8587-fda33c7f0af4",
         // personaShareId: process.env.PERSONA_SHARE_ID,
-        layoutMode: "fullScreen",
+        layoutMode: "splitScreen",
         showUserInputInterface: true,
         displayCallToAction: true,
         enableMicrophone: true,
+        position: "right",
+        cameraPosition: {
+          camera_position_vertical: -0.3,
+          camera_position_horizontal: 0.0,
+          camera_position_distance: 0.5,
+        },
+        customStyles: "",
+        enableTransparentBackground: false,
+        playWelcome: true,
+        ctaThumbnailUrl:
+          "https://res.cloudinary.com/ddownn0ib/image/upload/v1716498524/EU-DeloitteDemonstrations-15/sophie_blazer_thumb_zq6qsn.png",
+        mobileViewWidthBreakpoint: 0,
+        backgroundImageUrl:
+          "https://res.cloudinary.com/ddownn0ib/image/upload/v1716492996/EU-DeloitteDemonstrations-15/belastingdienst_ykp0gk.jpg",
+        languageStrings: {
+          default: {
+            callToActionText: "👋 Hello click here to talk to Didi",
+            errorText: "An error occurred.",
+            textInputPlaceholder: "Type here...",
+            sendQuestionButtonToolTip: "Send Message",
+            startRecordingButtonToolTip: "Start Recording",
+            microphonePermissionBlockedButtonToolTip:
+              "Microphone permission blocked",
+            recordingTapToStart: "Tap to record, tap again to send",
+            recordingSpeakNowPrompt: "Speak now",
+            recordingTapStopWhenDone: "Tap stop when done",
+            recordingStopButtonToolTip: "Stop Recording",
+            recordingRequestingMicrophonePrompt: "Requesting Microphone",
+            settingsExitButton: "Exit",
+            confirmExitDescription: "Are you sure you want to exit?",
+            confirmExitStayButton: "STAY",
+            confirmExitEndButton: "EXIT",
+            hideContentButton: "Hide Content",
+            hideDigitalHumanButton: "Hide Digital Human",
+          },
+        },
+        speechToTextLocales: "nl-NL:en-GB:de-DE:pl-PL:tr-TR",
+        customData: {
+          locale: "nl-NL",
+          personaOverrides:
+            '[{"header":"traitId","value":"0e0831fd-1a9b-42ae-9174-dd058500f20e"},{"header":"agentId","value":"0e8c83b6-3ee3-4b3c-b126-f5dd7f248ae3"}]',
+        },
       };
     </script>
-    <script src="https://hosted.eu.uneeq.io/interactions/v1/deploy"></script>
+    <script src="https://hosted.de.uneeq.io/interactions/v1/deploy"></script>
     <title>Belastingdienst Nederland</title>
   </head>
   <body>
