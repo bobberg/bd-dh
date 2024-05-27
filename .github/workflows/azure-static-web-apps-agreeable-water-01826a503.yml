@@ -20,6 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
+          node-version: "20.10.0"
+          npm-version: "10.2.3"
           submodules: true
           lfs: false
 
